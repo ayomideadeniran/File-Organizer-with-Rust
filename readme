@@ -1,0 +1,61 @@
+# 🗂️ File Organizer
+
+A simple Rust CLI tool to organize files in a directory by their file type.
+
+## ✨ Features
+
+- Organizes files into folders based on their extensions (e.g., `.jpg` files go into an `Images` folder).
+- Easy to use from the command line.
+
+## 🚀 Getting Started
+
+### 🛠️ Prerequisites
+
+- [Rust](https://www.rust-lang.org/tools/install) (make sure `cargo` is available)
+
+### 🏗️ Build
+
+Clone the repository and build the project:
+
+```sh
+git clone <your-repo-url>
+cd file_organzer
+cargo build --release
+```
+
+### ▶️ Usage
+
+Run the program with the target directory as an argument:
+
+```sh
+cargo run -- <target_directory>
+```
+
+Or, after building, use the binary:
+
+```sh
+./target/release/file_organzer <target_directory>
+```
+
+**Example:**
+
+```sh
+cargo run -- ~/Downloads
+```
+
+This will organize files in your `Downloads` folder into subfolders by type.
+
+### ℹ️ Notes
+
+- 📝 The program will print messages for each file it moves.
+- 🔒 Make sure you have write permissions for the target directory.
+
+## 📁 Project Structure
+
+- `src/main.rs` — Entry point, handles CLI arguments.
+- `src/organize.rs` — Contains the organizing logic.
+- `src/category.rs` — (Assumed) Contains file type categorization logic.
+
+## 📜 License
+
+MIT

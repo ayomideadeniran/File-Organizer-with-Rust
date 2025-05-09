@@ -1,4 +1,3 @@
-
 pub fn get_category(extension: &str) -> &str {
     match extension {
         "jpg" | "jpeg" | "png" | "gif" => "Images",
@@ -8,4 +7,3 @@ pub fn get_category(extension: &str) -> &str {
         _ => "Others",
     }
 }
-
