@@ -21,7 +21,7 @@ fn main() {
     if !target_dir.exists() || !target_dir.is_dir() {
         eprintln!("The specified path is not a valid directory.");
         return;
-    }
+    }  println!("Target directory: {}", target_dir.display());
     organising(&target_dir);
 }
 
